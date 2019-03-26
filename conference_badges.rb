@@ -32,17 +32,15 @@ end
 
 
 
-def printer
-  badge_output = []
-  room_assignment_output = []
-  badge_output  = batch_badge_creator
-  room_assignment_output = assign_rooms
-  badge_output.each {|badge|
-    puts badge
-  }
-  room_assignment_output.each{|room_assignment|
-    puts room_assignment
+def printer(attendees)
+  badges_and_room_assignments = []
+  
+  badges_and_room_assignments  = batch_badge_creator(participants)
+  badges_and_room_assignments  = assign_rooms(participants)
+  
+  badges_and_room_assignments.each {|guest_info|
+    puts guest_info
   }
 end
 
-attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
+#attendees = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
