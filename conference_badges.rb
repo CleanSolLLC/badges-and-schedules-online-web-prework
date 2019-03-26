@@ -42,4 +42,3 @@ def printer(attendees)
     puts guest_info
   }
 end
-
