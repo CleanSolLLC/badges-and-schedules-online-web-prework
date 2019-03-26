@@ -43,4 +43,3 @@ def printer(attendees)
   }
 
 end
-
