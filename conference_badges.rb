@@ -40,5 +40,5 @@ def printer(attendees)
 
   #badges_and_room_assignments.each {|guest_info|
     puts badges_and_room_assignments
-  }
+  
 end
