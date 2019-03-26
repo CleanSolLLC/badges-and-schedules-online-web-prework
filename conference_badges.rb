@@ -35,10 +35,13 @@ end
 def printer(attendees)
   badges_and_room_assignments = []
   badges_and_room_assignments  = batch_badge_creator(attendees)
-    badges_and_room_assignments  << assign_rooms(attendees)
+      badges_and_room_assignments.each {|guest_info|
+        puts guest_info
+    badges_and_room_assignments = assign_rooms(attendees)
+  }
 
     badges_and_room_assignments.each {|guest_info|
-      puts badges_and_room_assignments
+      puts guest_info
   }
 
 end
