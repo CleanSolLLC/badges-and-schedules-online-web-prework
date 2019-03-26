@@ -33,13 +33,13 @@ end
 
 
 def printer(attendees)
-  printer_array = []
-  printer_array  = batch_badge_creator(attendees)
-  printer_array  << assign_rooms(attendees)
+   = []
+  badges_and_room_assignments  = batch_badge_creator(attendees)
+    badges_and_room_assignments  << assign_rooms(attendees)
 
-    printer_array.each {|guest_info|
+    badges_and_room_assignments.each {|guest_info|
     #  badges_and_room_assignments += guest_info
-      puts   guest_info/n
+      puts badges_and_room_assignments/n
   }
 
 end
